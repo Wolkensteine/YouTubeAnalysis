@@ -6,7 +6,8 @@ from googleapiclient.discovery import build
 from googleapiclient.errors import HttpError
 
 # Google API Key
-api_key = 'AIzaSyCnZH1gCbjNv2gWtI_uqL1bsxGvrzPJM48'
+with open('credentials.txt') as file:
+    api_key = file.read().replace("\n", "")
 
 # Channel names to analyze
 channel_names = ['Staiy', 'Miimii', 'ApoRed', 'Apache207', 'HurraKinderlieder', 'Jules1', 'Jindaouis', 'MikeVallasVlogs', 'bani349', 'MontanaBlack', 'tomatolix', 'LuneOfficiel', 'KMNGANG', 'ArchitecturalDigestGermany', 'NeedToKnoww', 'MAITHINKX', '3pTV', 'TomSupreme', 'Lewinray', 'vieleRezepte', 'Simplicissimus', 'BulienJam', 'TheRealLifeGuys']
